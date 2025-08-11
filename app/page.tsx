@@ -677,10 +677,10 @@ Tip: I automatically detect and install npm packages from your code imports (lik
           log(data.explanation);
         }
         
-        if (data.autoCompleted) {
+        if (data?.autoCompleted) {
           log('Auto-generating missing components...', 'command');
           
-          if (data.autoCompletedComponents) {
+          if (data?.autoCompletedComponents) {
             setTimeout(() => {
               log('Auto-generated missing components:', 'info');
               data.autoCompletedComponents.forEach((comp: string) => {
